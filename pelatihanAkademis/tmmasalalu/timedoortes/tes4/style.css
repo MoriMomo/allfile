@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald";
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    color: white;
+    background-color: rgb(21, 0, 68);
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0px 10px
+}
+
+/* main */
+
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    background-image: url(img/jumbotron-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30rem;
+}
+
+.j-text {
+    width: 30%;
+    font-size: 20px;
+}
+
+.j-text {
+    width: 30%;
+    font-size: 20px;
+    font-family: "Oswald";
+}
+
+.j-text p {
+    line-height: 30px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.content {
+    display: flex;
+    gap: 100px;
+    margin-top: 50px;
+    padding: 0 30px;
+}
+
+aside {
+    display: flex;
+    width: 200px;
+    max-height: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+}
+
+aside img {
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 0 0 20px gainsboro;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-drawings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+}
+
+.cont-drawing {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cont-drawings h2 {
+    text-align: center;
+    padding: 0.2rem 0rem;
+}
+
+.cont-drawings h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.cont-drawings p {
+    text-align: justify;
+}
+
+.drawing {
+    display: flex;
+    flex-direction: column;
+    width: 32rem;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    border: 2px solid #ccc;
+    border-top: 5px solid black;
+    border-radius: 15px;
+}
+
+.drawing img {
+    width: 400px;
+    height: 300px;
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
+    background-color: #C1C9ED;
+    margin-top: 3rem;
+    padding: 1rem 0rem;
+    font-family: "Oswald";
+}
+
+.footer p {
+    border-top: 1px solid black;
+    padding-top: 5px;
+}
+
+.footer-logo {
+    margin: 10px;
+    font-size: 25px;
+}

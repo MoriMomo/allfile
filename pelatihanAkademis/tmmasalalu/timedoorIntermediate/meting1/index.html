@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+        <title> 
+            Learn coding with timedoor
+        </title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css kek gini -->
+    <style>
+        div
+        {
+            padding-top: 100px;
+            text-align: center;
+        }
+        button
+        {
+            background-color: indigo;
+            color: red;
+            text-align: center;
+            font-size: large;
+        }
+    </style>
+
+
+</head>
+<body>
+    <!--buat badan --> 
+    <div classs = "center">
+        <h1 id = 'greeting'> Hello world </h1>
+        <h2>Lets change the color</h2>
+        <button> Click me </button>
+        <h3> this is + var colors</h3>
+    <div>
+</body>
+<script>
+    const body = document.querySelector('body');
+    const button = document.querySelector('button')
+
+    var name = prompt("what is your name");
+
+    document.getElementById("greeting").innerHTML = "Hello " + name ;
+
+    var colors = ['red','yellow','blue','indigo','green','purple','violet','orange'];
+
+    body.style.background = colors[3];
+
+    function changeColor()
+    {
+        var colorIndex = parseInt(Math.random()*colors.length);
+
+        body.style.backgroundColor = colors[colorIndex];
+
+        
+    }
+            button.addEventListener('click', changeColor)
+</script>
+</html>

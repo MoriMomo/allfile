@@ -1,0 +1,138 @@
+/* all */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Koulen', cursive;
+}
+
+body {
+    background-color: rgb(255, 236, 189)
+}
+
+.p-color {
+    color: #A0BCC2;
+}
+
+.s-color {
+    color: #DAE5D0;
+}
+
+.zoom {
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.zoom:hover {
+    transform: scale(1.05);
+}
+
+/* judul */
+
+.container-judul {
+    margin: auto;
+    background-image: url(/img/cover1.jpg);
+    padding: 20px 0px 20px 0px;
+    margin: 90px;
+}
+
+.judul {
+    font-size: 50pt;
+    /* color: rgb(223, 181, 46); */
+    text-align: center;
+}
+
+.sub-judul {
+    /* color: rgb(102, 60, 6); */
+    text-align: center;
+}
+
+.cont-img-judul {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.title-img {
+    width: 1000px;
+    height: 500px;
+    border: 20px solid rgba(182, 181, 181, 0.281);
+
+}
+
+.motto {
+    font-size: 30pt;
+    text-align: center;
+    /* color: rgb(243, 197, 72); */
+    font-weight: bold;
+    align-items: center;
+}
+
+/* menu */
+
+.cont-breakfast {
+    background-image: url(/img/cover1.jpg);
+    margin: 90px;
+    padding: 10px 10px 10px 10px;
+}
+
+.menu {
+    /* padding-top: 10px; */
+    background-color: rgba(106, 106, 106, 0.637);
+}
+
+.container-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.col3 {
+    flex-basis: 33%;
+    text-transform: capitalize;
+    width: 550px;
+    height: 550px;
+    border: 1px solid #DAE5D0;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-breakfast {
+    font-size: 50px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+
+
+/* table */
+table,
+tr,
+th,
+td {
+    /* border: 2px solid #ccc;
+    border-collapse: collapse;
+     */
+
+}
+
+table {
+    width: 100%;
+    color: rgb(0, 0, 0);
+}
+
+
+
+td,
+th {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    border: 2px solid rgb(84, 82, 87);
+    background-color: rgb(255, 187, 105);
+    font-size: 50px;
+
+}

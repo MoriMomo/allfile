@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intermediate test</title>
+</head>
+
+<body>
+    <h3>Student list</h3>
+</body>
+
+<script>
+    class Students {
+        constructor(ID, name, grade) {
+            this.ID = ID;
+            this.name = name;
+            this.grade = grade;
+            this.display = function () {
+                document.write(this.ID + " " + this.name + " " + this.grade + " <br> ")
+            }
+
+        }
+
+    }
+    var student1 = new Students("1", "Hanna", "7A")
+    var student2 = new Students("2", "Ivan", "7B")
+    var student3 = new Students("3", "Julian", "8B")
+    var student4 = new Students("4", "Kimberly", "8A")
+    var student5 = new Students("5", "logan", "9A")
+    var student6 = new Students("6", "noah", "9B")
+
+    document.write(student1.display())
+</script>
+
+</html>

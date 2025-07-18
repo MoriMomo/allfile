@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JUDUL</title>
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <main>
+        <div class="form">
+            <h3 class="title">Coding Compitition <br> EnrollMent 2022</h3>
+
+            <form action="result.html" target="blank" method="get" autocomplete="on" novalidate>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+
+                <label for="address">Address</label>
+                <textarea name="address" id="address" cols="30" rows="10"></textarea>
+
+                <label for="phone">Phone number</label>
+                <input type="number" name="phone" id="phone" min="1" max="10">
+
+                <label for="kategori">kategori</label>
+                <select name="kategori" id="kategori">
+                    <option value="Kids">Kids(8-10)</option>
+                    <option value="Teen">Teen(11-18)</option>
+                    <option value="Adult">Adult(18-21)</option>
+                </select> <br>
+
+                <p>gender</p>
+
+                <input type="radio" id="gender" name="gender" value="male">
+                <label for="gender">Male</label>
+
+                <input type="radio" id="gender" name="gender" value="female">
+                <label for="gender">Female</label>
+
+                <p>document</p>
+
+                <input type="checkbox" id="document" name="document" value="StudentCard">
+                <label for="document">Student Card</label>
+
+                <input type="checkbox" id="document" name="document" value="Biodata">
+                <label for="document">Biodata</label>
+
+                <label for="file">Upload</label>
+                <input type="file" id="file" name="file" multiple>
+
+                <input type="date" min="2020-01-01" max="2022-01-01">
+
+                <input type="submit" value="Submit" class="submit-btn">
+            </form>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+    </footer>
+
+</body>
+
+<script src=""></script>
+
+</html>

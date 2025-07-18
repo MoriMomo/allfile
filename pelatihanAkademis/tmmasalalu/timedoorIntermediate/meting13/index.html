@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+</head>
+
+<body>
+    <canvas id="mycanvas" width="700px" height="400px" style="background-color: plum"></canvas>
+
+</body>
+
+<script>
+    var canvas = document.getElementById("mycanvas")
+    var ctx = canvas.getContext("2d");
+
+    ctx.textAlign = "center";
+    ctx.font = " 40px Times New Roman";
+    ctx.fillText = ("wilkomen", 325, 60);
+    ctx.strokeStyle = "white";
+    ctx.fillStyle = "blue";
+
+    // rectangle
+    ctx.fillStyle = "red";
+    ctx.fillRect(200, 325, 250, 50)
+
+    //segitiga
+    ctx.fillStyle = "blue";
+    ctx.beginPath();
+    ctx.moveTo(325, 230);
+    ctx.lineTo(300, 270);
+    ctx.lineTo(350, 270);
+    ctx.closePath();
+    ctx.fill();
+
+    //lingkaran
+    ctx.fillStyle = "black";
+    ctx.strokeStyle = "white";
+    ctx.lineWidht = "20";
+    ctx.beginPath();
+    ctx.arc(130, 150, 40, 0, 2 * Math.PI)
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.fillStyle = "black";
+    ctx.strokeStyle = "white";
+    ctx.lineWidht = "20";
+    ctx.beginPath();
+    ctx.arc(520, 170, 40, 0, 2 * Math.PI)
+    ctx.fill();
+    ctx.stroke();
+
+</script>
+
+</html>
