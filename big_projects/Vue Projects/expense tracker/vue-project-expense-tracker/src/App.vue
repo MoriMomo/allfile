@@ -3,8 +3,11 @@
     <Header />
     <Balance :total="total" />
     <IncomeExp :income="income" :expenses="expense" />
-    <TransactList :transactions="transactions" />
-    <AddTransact @transactionSubmited="handleTransactionSubmitted" />
+    <TransactList
+      :transactions="transactions"
+      @transactionDeleted="handleTransactionDeleted"
+    />
+    <AddTransact @transactionSubmitted="handleTransactionSubmitted" />
   </div>
 </template>
 
@@ -53,16 +56,6 @@ const expense = computed(() => {
     }, 0);
 });
 
-// Add transaction
-// const addTransaction = (newTransaction) => {
-//   transactions.value.push({
-//     id: transactions.value.length + 1,
-//     ...newTransaction,
-//     amount: Number(newTransaction.amount),
-//   });
-// };
-
-//
 const handleTransactionSubmitted = (transactionData) => {
   transactions.value.push({
     id: generateUniqueId(),
@@ -70,14 +63,25 @@ const handleTransactionSubmitted = (transactionData) => {
     amount: transactionData.amount,
   });
 
-  toast.success("Transaction added successfully");
+  // saveTransactionsToLocalStorage();
+
+  toast.success("Transaction added.");
 };
 
+// Generate unique ID
 const generateUniqueId = () => {
-  return Math.floor(Math.random() * 100000);
+  return Math.floor(Math.random() * 1000000);
 };
 
-console.log(generateUniqueId());
+// Delete transaction
+const handleTransactionDeleted = (id) => {
+  transactions.value = transactions.value.filter(
+    (transaction) => transaction.id !== id
+  );
+
+  // saveTransactionsToLocalStorage();
+  toast.success("Transaction deleted.");
+};
 </script>
 
 <style>
