@@ -1,0 +1,113 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    padding: 0;
+    margin: auto;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cards {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title h2 {
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3rem;
+}
+
+.card-text {
+    color: white;
+    margin: 1rem 0rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.card-bright-orange {
+    background-color: hsl(31, 77%, 52%);
+    padding: 2rem 2rem;
+    height: 30rem;
+    width: 16rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: 1s;
+}
+
+.card-dark-cyan {
+    background-color: hsl(184, 100%, 22%);
+    padding: 2rem 2rem;
+    height: 30rem;
+    width: 16rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.card-very-dark-cyan {
+    background-color: hsl(179, 100%, 13%);
+    padding: 2rem 2rem;
+    height: 30rem;
+    width: 16rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+
+.button-cards-orange {
+    background: white;
+    color: hsl(31, 77%, 52%);
+    padding: 16px 40px;
+    margin: 20px 0px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 1s;
+    border: none;
+    font-size: 1rem;
+    margin: 5rem 0 0 0.5rem;
+    cursor: pointer;
+}
+
+.button-cards-cyan {
+    background: white;
+    color: hsl(184, 100%, 22%);
+    padding: 16px 40px;
+    margin: 20px 0px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 1s;
+    border: none;
+    font-size: 1rem;
+    margin: 5rem 0 0 0.5rem;
+    cursor: pointer;
+}
+
+.button-cards-dark-cyan {
+    background: white;
+    color: hsl(179, 100%, 13%);
+    padding: 16px 40px;
+    margin: 20px 0px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 1s;
+    border: none;
+    font-size: 1rem;
+    margin: 5rem 0 0 0.5rem;
+    cursor: pointer;
+}
+
+.button-cards:hover {
+    border: 1px solid white;
+    background: transparent;
+    color: #fff;
+}
+
+/* @media {} */

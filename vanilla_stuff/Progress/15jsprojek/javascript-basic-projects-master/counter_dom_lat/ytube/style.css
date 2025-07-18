@@ -1,0 +1,12 @@
+* {
+    padding: 0 0 0 0;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

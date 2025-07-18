@@ -1,0 +1,5 @@
+ada nav bar, judul di bagian kiri dan dua link di bagian kanan ada
+pilihanya simple dan hex, kalo pencet simple nanti ke halaman
+yang ada tulisan background color dan tulisan warna (rgb,green,red)
+dan click me. kalo di pencet nanti tulisanya berubah dan background
+colornya berubah 

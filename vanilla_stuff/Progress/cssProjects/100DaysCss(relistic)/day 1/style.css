@@ -1,0 +1,67 @@
+/* // delete the following line if no text is used
+// edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* // use only the available space inside the 400x400 frame */
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    color: white;
+    background-image: linear-gradient(45deg, #EA52F8 5.66%, #0066FF 94.35%);
+    font-family: 'Courier New', 'Courier', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.number-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number-box h1 {
+    font-size: 110px;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+}
+
+.days .css {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: bolder;
+}
+
+.css {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 10px;
+}
